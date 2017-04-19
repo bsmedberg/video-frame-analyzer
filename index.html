@@ -1,0 +1,38 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Find key video frames</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+    }
+    #f {
+      border: 1px solid black;
+      height: 500px;
+      display: block;
+    }
+    .hidden {
+      visibility: hidden;
+    }
+  </style>
+
+<body>
+  <h1>Find key video frames</h1>
+
+
+  <p><label for="video-file">Select a video:</label><select id="video-file">
+      <option value="">(none)</option>
+    </select></p>
+
+  <p><img id="f"></p>
+  <div id="framecounter" class="hidden">Frame <span id="frameno"></span></div>
+
+  <div id="controls">
+    <button id="wayback">&lt;&lt;&lt;</button>
+    <button id="skipback">&lt;&lt;</button>
+    <button id="backone">&lt;</button>
+    <button id="fwdone">&gt;</button>
+    <button id="skipfwd">&gt;&gt;</button>
+    <button id="wayfwd">&gt;&gt;&gt;</button>
+  </div>
+
+  <script src="video-analyzer.js"></script>
