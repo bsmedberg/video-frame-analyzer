@@ -13,6 +13,9 @@
     .hidden {
       visibility: hidden;
     }
+    #inputframe {
+      margin-left: 2em;
+    }
   </style>
 
 <body>
@@ -21,7 +24,7 @@
 
   <p><label for="video-file">Select a video:</label><select id="video-file">
       <option value="">(none)</option>
-    </select></p>
+    </select><button id="refresh-files">&#x1f504;</button></p>
 
   <p><img id="f"></p>
   <div id="framecounter" class="hidden">Frame <span id="frameno"></span></div>
@@ -33,6 +36,9 @@
     <button id="fwdone">&gt;</button>
     <button id="skipfwd">&gt;&gt;</button>
     <button id="wayfwd">&gt;&gt;&gt;</button>
+
+    <input type="text" id="inputframe" size="6">
+    <button id="go">#</button>
   </div>
 
   <script src="video-analyzer.js"></script>
